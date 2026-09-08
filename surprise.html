@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bon... tu as dit oui 👀</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-two">
+
+    <main class="card">
+
+        <p class="eyebrow">Bon... tu as dit oui 👀</p>
+
+        <h1>
+            Et maintenant ?
+        </h1>
+
+        <div class="text">
+
+            <p>
+                Et puis bon... maintenant que tu es arrivée jusqu'ici,
+                autant aller jusqu'au bout. 😅
+            </p>
+
+            <p>
+                J'ai peut-être légèrement sur-réfléchi à cette histoire
+                pour quelqu'un que je ne connais même pas encore.
+            </p>
+
+            <p>
+                Mais quitte à avoir préparé tout ça, autant te laisser
+                une chance de découvrir qui se cache derrière ce petit mot.
+            </p>
+
+        </div>
+
+        <a
+            href="https://www.instagram.com/aurelienmqt_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-instagram"
+        >
+            📸 Mon Instagram
+        </a>
+
+        <button
+            id="finalNoButton"
+            class="btn btn-final-no"
+        >
+            Finalement, non merci
+        </button>
+
+        <p id="goodbye" class="goodbye"></p>
+
+    </main>
+
+    <script>
+
+        const finalNoButton = document.getElementById("finalNoButton");
+        const goodbye = document.getElementById("goodbye");
+
+        finalNoButton.addEventListener("click", () => {
+
+            goodbye.textContent =
+                "Aucun souci 😊 Bonne continuation !";
+
+            finalNoButton.style.display = "none";
+
+        });
+
+    </script>
+
+</body>
+</html>

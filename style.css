@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    color: #3b252b;
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+}
+
+/* =========================
+   PAGE 1
+========================= */
+
+.page-one {
+    background:
+        radial-gradient(
+            circle at top left,
+            #fce8ed,
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #f7dce3,
+            transparent 45%
+        ),
+        #fff8f7;
+}
+
+/* =========================
+   PAGE 2
+========================= */
+
+.page-two {
+    background:
+        radial-gradient(
+            circle at top right,
+            #f8e3d5,
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            #f3dce5,
+            transparent 45%
+        ),
+        #fffaf7;
+}
+
+/* =========================
+   CARTE
+========================= */
+
+.card {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    border: 1px solid rgba(140, 70, 85, 0.12);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(100, 45, 60, 0.12),
+        0 5px 20px rgba(100, 45, 60, 0.05);
+
+    backdrop-filter: blur(12px);
+
+    animation: appear 0.7s ease;
+}
+
+/* =========================
+   TEXTES
+========================= */
+
+.eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a94d65;
+}
+
+h1 {
+    margin-bottom: 22px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(36px, 8vw, 52px);
+
+    line-height: 1.08;
+
+    font-weight: 600;
+}
+
+.description {
+    margin-bottom: 35px;
+
+    color: #765b62;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 310px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 15px 25px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* Oui */
+
+.btn-yes,
+.btn-instagram {
+    background: #a94d65;
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(169, 77, 101, 0.25);
+}
+
+.btn-yes:hover,
+.btn-instagram:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(169, 77, 101, 0.35);
+}
+
+/* Non */
+
+.btn-no {
+    background: #f3e8ea;
+
+    color: #765b62;
+}
+
+.btn-no:hover {
+    background: #eadcdf;
+}
+
+/* =========================
+   MESSAGE PAGE 1
+========================= */
+
+.message {
+    min-height: 24px;
+
+    margin-top: 18px;
+
+    color: #a94d65;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+/* =========================
+   PAGE 2
+========================= */
+
+.page-two .card {
+    max-width: 520px;
+
+    padding-top: 55px;
+}
+
+.page-two h1 {
+    font-size: clamp(38px, 8vw, 50px);
+
+    margin-bottom: 25px;
+}
+
+.text {
+    max-width: 400px;
+
+    margin: 0 auto 30px;
+
+    color: #765b62;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+.text p + p {
+    margin-top: 16px;
+}
+
+.btn-instagram {
+    display: block;
+
+    margin: 0 auto 10px;
+}
+
+.btn-final-no {
+    background: transparent;
+
+    color: #8d7379;
+
+    font-size: 13px;
+
+    box-shadow: none;
+}
+
+.btn-final-no:hover {
+    background: rgba(140, 70, 85, 0.05);
+
+    transform: none;
+}
+
+.goodbye {
+    min-height: 22px;
+
+    margin-top: 10px;
+
+    color: #765b62;
+
+    font-size: 13px;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 40px 24px;
+
+        border-radius: 24px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
