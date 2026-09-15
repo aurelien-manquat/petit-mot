@@ -1,65 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<script data-goatcounter="https://aurelien.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Une petite question...</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les 20 ans d'Aurélien</title>
+  <meta name="description" content="La liste de souhaits pour les 20 ans d'Aurélien.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header class="topbar"><a class="wordmark" href="#accueil">AURÉLIEN <span>20</span></a><a class="nav-link" href="#souhaits">Voir les idées <span>↓</span></a></header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">ÉDITION ANNIVERSAIRE · 24.10.2026</p>
+        <h1>Les <em>20 ans</em><br>d'Auré</h1>
+        <p class="intro">Le temps file : né le 24 octobre 2006, je fête mes 20 ans le jour même. Et ça mérite bien une belle soirée avec vous.</p>
+        <div class="countdown-box" aria-label="Compte à rebours avant la fête"><div><strong id="days">—</strong><span>jours</span></div><div><strong id="hours">—</strong><span>heures</span></div><div><strong id="minutes">—</strong><span>min.</span></div><div><strong id="seconds">—</strong><span>sec.</span></div></div>
+        <a class="button dark" href="#souhaits">Découvrir la liste <span>↘</span></a>
+      </div>
+      <div class="hero-visual"><div class="circle-stamp">2006 — 2026<br><b>20 ANS</b></div><div class="carousel"><img class="slide active" src="assets/enfance-front.jpg" alt="Aurélien enfant"><img class="slide" src="assets/aure-sunset.jpg" alt="Aurélien avec sa mère au coucher du soleil"><img class="slide" src="assets/aure-family.jpg" alt="Aurélien avec son père au coucher du soleil"><img class="slide" src="assets/party.jpg" alt="Aurélien avec sa sœur lors d'une soirée"></div><div class="carousel-controls"><button class="carousel-arrow previous" aria-label="Photo précédente">←</button><div class="carousel-dots" aria-label="Choisir une photo"><button class="active" aria-label="Photo 1"></button><button aria-label="Photo 2"></button><button aria-label="Photo 3"></button><button aria-label="Photo 4"></button></div><button class="carousel-arrow next" aria-label="Photo suivante">→</button></div><p class="photo-caption">un peu grandi depuis 2006</p></div>
+    </section>
 
-<body class="page-one">
+    <section class="note"><p>« Votre présence est déjà le plus beau cadeau. Mais si vous avez envie de participer à quelque chose qui me plaît, j’ai glissé quelques idées ci-dessous. »</p><span>— Aurélien</span></section>
 
-    <main class="card">
+    <section class="wishlist" id="souhaits">
+      <div class="section-heading"><div><p class="eyebrow">LA LISTE</p><h2>Des envies, <em>pas des obligations.</em></h2></div></div>
+      <div class="gift-grid">
+        <article class="gift-card featured"><div class="gift-number">01</div><div class="gift-icon">◖◗</div><p class="tag">CASQUE AUDIO</p><h3>Casque Razer BlackShark V2 Pro</h3><p>Pour écouter de la musique, regarder des films et jouer sur PC — avec l’objectif de le garder longtemps.</p><div class="card-bottom"><span>Référence choisie</span><button data-url="https://www.amazon.fr/dp/B0BXLWCLZN">Voir le casque <b>↗</b></button></div></article>
+        <article class="gift-card"><div class="gift-number">02</div><div class="gift-icon">✦</div><p class="tag">POUR ETRE BEAUGOSS</p><h3>Tondeuse Braun BT7525</h3><p>Et pour remplacer le OneBlade et arrêter d’emprunter la tondeuse de Papa.</p><div class="card-bottom"><span>Référence choisie</span><button data-url="https://www.amazon.fr/dp/B0DQWYGX7M">Voir la tondeuse <b>↗</b></button></div></article>
+        <article class="gift-card om"><div class="gift-number">03</div><div class="gift-icon">⚽</div><p class="tag">UNE EXPÉRIENCE</p><h3>Un match de l’OM</h3><p>Des places au Vélodrome cette saison. Parce qu’un match, ça se vit mieux en vrai.</p><div class="card-bottom"><span>Date à choisir</span><button data-gift="des places pour l'OM">Participer <b>↗</b></button></div></article>
+        <article class="gift-card"><div class="gift-number">04</div><div class="gift-icon">⌁</div><p class="tag">SPORT</p><h3>Ensemble de sport Gymshark</h3><p>Un t-shirt Running et un short Sport, tous les deux en noir.</p><div class="card-bottom sport-links"><span>2 pièces au choix</span><div style="display:flex;gap:12px"><button data-url="https://fr.gymshark.com/products/gymshark-running-t-shirt-ss-tops-black-aw25">T-shirt ↗</button><button data-url="https://fr.gymshark.com/products/gymshark-sport-7-shorts-black-ss25">Short ↗</button></div></div></article>
+        <article class="gift-card lego"><div class="gift-number">05</div><div class="gift-icon">▦</div><p class="tag">KIFF PERSO</p><h3>Un beau LEGO</h3><p>Le genre de set qu’on garde longtemps — à choisir ensemble selon l’inspiration du moment.</p><div class="card-bottom"><span>Set à choisir</span><button data-gift="un set LEGO">Participer <b>↗</b></button></div></article>
+        <article class="gift-card contribution"><div class="gift-number">∞</div><p class="tag">LA FORMULE LIBRE</p><h3>Une participation libre</h3><p>Une participation, même petite, aidera à concrétiser une de ces envies. Et si vous aviez déjà une autre idée de cadeau, ou si cette liste ne vous inspire pas, faites comme vous le sentez : ça me fera tout autant plaisir.</p><button class="button light" data-gift="la cagnotte libre">Contribuer librement <span>↗</span></button></article>
+      </div>
+    </section>
 
-        <p class="eyebrow">Une petite question...</p>
-
-        <h1>
-            Alors,<br>
-            on fait connaissance ?
-        </h1>
-
-        <p class="description">
-            Tu as réussi à arriver jusqu'ici.<br>
-            Maintenant, c'est à toi de choisir. 👀
-        </p>
-
-        <div class="buttons">
-
-            <button
-    id="yesButton"
-    class="btn btn-yes"
-    data-goatcounter-click="oui">
-    Pourquoi pas ? 👀
-</button>
-
-            <button
-    id="noButton"
-    class="btn btn-no"
-    data-goatcounter-click="non">
-    Non merci
-</button>
-
-        </div>
-
-        <p id="message" class="message"></p>
-
-    </main>
-
-    <script src="script.js"></script>
-
+    <section class="memory"><div class="memory-image"><img src="assets/enfance.jpg" alt="Aurélien enfant dans une barque"></div><div class="memory-copy"><p class="eyebrow">2006 → 2026</p><h2>Vingt ans,<br><em>ça se fête.</em></h2><p>Merci d’être là, d’avoir partagé un morceau de route, et de rendre cette soirée encore plus spéciale.</p><p class="signature">Aurélien</p></div></section>
+  </main>
+  <footer><span>LES 20 ANS D'AURÉ</span><span>24 OCTOBRE 2026</span><a href="#accueil">Retour en haut ↑</a></footer>
+  <dialog id="modal"><button class="close" aria-label="Fermer">×</button><p class="eyebrow">MERCI !</p><h2>Participation pour<br><em id="gift-name">—</em></h2><p>Les liens et les références seront ajoutés ici très prochainement. En attendant, tu peux simplement contacter Auré pour réserver ce cadeau ou participer au montant qui te convient.</p><button class="button dark close-action">Compris <span>→</span></button></dialog>
+  <script src="script.js"></script>
 </body>
 </html>
